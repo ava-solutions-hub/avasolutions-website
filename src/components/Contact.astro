@@ -1,0 +1,24 @@
+---
+import { site } from '../data/site';
+---
+<section class="section contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <span class="eyebrow reveal" style="color:var(--gold-lt)">Get in touch</span>
+    <h2 class="reveal" id="contact-h">Let's talk about<br />your next modernization.</h2>
+    <p class="reveal">
+      Whether you're a federal agency, a prime looking to team, or an enterprise modernizing core systems —
+      we'd like to hear from you.
+    </p>
+    <div class="contact-cta reveal">
+      <a class="btn btn-gold" href={`mailto:${site.email}`}>Email {site.name}</a>
+      <a class="btn btn-ghost" href={site.capabilityStatementPath} target="_blank" rel="noopener">
+        View capability statement
+      </a>
+    </div>
+    <div class="meta reveal">
+      <span><a href={`mailto:${site.email}`}>{site.email}</a></span>
+      <span>{site.city}, {site.state}</span>
+      <span>{site.domain}</span>
+    </div>
+  </div>
+</section>

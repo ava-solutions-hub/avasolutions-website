@@ -1,0 +1,24 @@
+---
+import { site } from '../data/site';
+---
+<section class="hero" id="top">
+  <div class="sun-field" aria-hidden="true">
+    <div class="sun-glow"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <h1>We modernize the systems<br />agencies <span class="accent">depend on.</span></h1>
+    <p class="lead">{site.description}</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href={site.capabilityStatementPath} target="_blank" rel="noopener">
+        Download capability statement
+      </a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+    <div class="factline">
+      <span>Woman-Owned</span><span class="dot"></span>
+      <span>Virginia LLC</span><span class="dot"></span>
+      <span>Aldie, VA</span><span class="dot"></span>
+      <span>SAM.gov registration in progress</span>
+    </div>
+  </div>
+</section>

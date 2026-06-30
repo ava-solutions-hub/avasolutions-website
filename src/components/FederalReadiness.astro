@@ -1,0 +1,27 @@
+---
+import { federal } from '../data/site';
+---
+<section class="section fed" id="federal" aria-labelledby="fed-h">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Federal readiness</span>
+      <h2 id="fed-h">Ready to engage as a prime, sub, or teaming partner.</h2>
+      <p>Registered and structured for federal work, with capabilities mapped to the codes that matter.</p>
+    </div>
+    <div class="fed-panel reveal">
+      <div class="fed-cell"><span class="k">Business Type</span><span class="v">{federal.businessType}</span></div>
+      <div class="fed-cell"><span class="k">Structure</span><span class="v">{federal.structure}</span></div>
+      <div class="fed-cell"><span class="k">Location</span><span class="v">{federal.location}</span></div>
+      <div class="fed-cell">
+        <span class="k">NAICS Codes</span>
+        <span class="v">
+          <span class="chips">
+            {federal.naics.map((code) => <span class="chip">{code}</span>)}
+          </span>
+        </span>
+      </div>
+      <div class="fed-cell"><span class="k">UEI / CAGE</span><span class="v pending">{federal.ueiCage}</span></div>
+      <div class="fed-cell"><span class="k">Engagement</span><span class="v">{federal.engagement}</span></div>
+    </div>
+  </div>
+</section>

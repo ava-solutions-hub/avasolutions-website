@@ -1,0 +1,23 @@
+---
+import SunMark from './SunMark.astro';
+import { navLinks, site } from '../data/site';
+---
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label={`${site.name} home`}>
+      <SunMark />
+      <span class="bname">AVA <span>SOLUTIONS</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      {navLinks.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+      <a class="btn btn-gold" href={site.capabilityStatementPath} target="_blank" rel="noopener">
+        Capability Statement
+      </a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

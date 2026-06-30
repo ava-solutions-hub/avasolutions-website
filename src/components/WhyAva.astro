@@ -1,0 +1,19 @@
+---
+import { whyItems } from '../data/site';
+---
+<section class="section why" aria-labelledby="why-h">
+  <div class="wrap why-grid">
+    <div class="reveal">
+      <span class="eyebrow">Why AVA</span>
+      <h2 id="why-h">Small enough to move fast. Experienced enough to be trusted.</h2>
+    </div>
+    <div class="items reveal">
+      {whyItems.map((item) => (
+        <div class="item">
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

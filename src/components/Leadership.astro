@@ -1,0 +1,23 @@
+---
+import { leaders } from '../data/site';
+---
+<section class="section lead-sec" id="leadership" aria-labelledby="leadership-h">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Leadership</span>
+      <h2 id="leadership-h">Led by practitioners, not just principals.</h2>
+    </div>
+    <div class="leaders">
+      {leaders.map((leader) => (
+        <div class="leader reveal">
+          <div class="av" aria-hidden="true">{leader.initials}</div>
+          <div>
+            <h3>{leader.name}</h3>
+            <div class="role">{leader.role}</div>
+            <p>{leader.bio}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+import { capabilities } from '../data/site';
+---
+<section class="section caps" id="capabilities" aria-labelledby="caps-h">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2 id="caps-h">Capabilities that span the modernization lifecycle.</h2>
+      <p>From strategy to delivery, we work across the systems agencies and enterprises rely on every day.</p>
+    </div>
+    <div class="cap-grid">
+      {capabilities.map((cap) => (
+        <div class="cap reveal">
+          <span class="tag">{cap.tag}</span>
+          <h3>{cap.title}</h3>
+          <p>{cap.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
