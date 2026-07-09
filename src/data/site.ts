@@ -14,12 +14,12 @@ export const site = {
   ogImagePath: '/og-image.svg',
 } as const;
 
+// SAM.gov UEI: PWPNEHF87D36 (AVA Solutions LLC) — for proposals/capability statement; not rendered on site
 export const federal = {
-  businessType: 'Woman-Owned Small Business',
+  businessType: 'Woman-Owned',
   structure: 'Virginia LLC',
   location: 'Aldie, Virginia',
   naics: ['541511', '541512', '541519', '541611'] as const,
-  ueiCage: 'Registration in progress',
   engagement: 'Prime · Subcontractor · Teaming',
 } as const;
 
@@ -88,7 +88,7 @@ export const whyItems = [
   {
     title: 'Accountable by design',
     body:
-      'A woman-owned small business built to stay close to the work and answerable for results.',
+      'A woman-owned business built to stay close to the work and answerable for results.',
   },
 ] as const;
 
