@@ -29,10 +29,12 @@ npm run preview    # preview the built site
 ```
 public/                        Static assets served as-is at the site root
   AVA_Solutions_Capability_Statement.pdf
-  AVA_sun_logo_navy.svg
-  AVA_sun_logo_white.svg
-  favicon.svg
-  og-image.svg
+  ava-logo.png                 1254px source of truth for the sunburst mark
+  ava-logo-512.png             hero / 2x nav / OG card
+  ava-logo-128.png             1x nav
+  apple-touch-icon.png         180px iOS home-screen icon
+  favicon-32.png               browser favicon
+  og-image.svg                 Open Graph social card (embeds ava-logo-512.png)
 src/
   components/                  Astro components, one per section
   data/site.ts                 Single source of truth for content/brand tokens

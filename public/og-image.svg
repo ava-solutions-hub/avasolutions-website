@@ -5,22 +5,15 @@
       <stop offset=".55" stop-color="#071A2E"/>
       <stop offset="1" stop-color="#05121F"/>
     </radialGradient>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F4CE72"/>
-      <stop offset=".5" stop-color="#D99A2B"/>
-      <stop offset="1" stop-color="#B97E1C"/>
-    </linearGradient>
     <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#D99A2B" stop-opacity=".16"/>
-      <stop offset=".38" stop-color="#D99A2B" stop-opacity=".05"/>
-      <stop offset=".66" stop-color="#D99A2B" stop-opacity="0"/>
+      <stop offset="0" stop-color="#D99A2B" stop-opacity=".18"/>
+      <stop offset=".4"  stop-color="#D99A2B" stop-opacity=".06"/>
+      <stop offset=".7"  stop-color="#D99A2B" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1100" cy="80" r="420" fill="url(#glow)"/>
-  <g transform="translate(880,90) scale(0.55)">
-    <path d="M 360,95 L 393.1,176.4 L 462.5,122.5 L 450.5,209.5 L 537.5,197.5 L 483.6,266.9 L 565,300 L 483.6,333.1 L 537.5,402.5 L 450.5,390.5 L 462.5,477.5 L 393.1,423.6 L 360,505 L 326.9,423.6 L 257.5,477.5 L 269.5,390.5 L 182.5,402.5 L 236.4,333.1 L 155,300 L 236.4,266.9 L 182.5,197.5 L 269.5,209.5 L 257.5,122.5 L 326.9,176.4 Z" fill="none" stroke="url(#g)" stroke-width="18" stroke-linejoin="miter"/>
-  </g>
+  <circle cx="1050" cy="150" r="480" fill="url(#glow)"/>
+  <image href="/ava-logo-512.png" x="820" y="60" width="320" height="320"/>
   <text x="80" y="300" font-family="Space Grotesk, system-ui, sans-serif" font-size="72" font-weight="600" fill="#FFFFFF" letter-spacing="-1.5">We modernize the systems</text>
   <text x="80" y="385" font-family="Space Grotesk, system-ui, sans-serif" font-size="72" font-weight="600" fill="#FFFFFF" letter-spacing="-1.5">agencies <tspan fill="#D99A2B">depend on.</tspan></text>
   <text x="80" y="490" font-family="Inter, system-ui, sans-serif" font-size="26" fill="#FFFFFF" opacity=".82">AVA Solutions — Cloud, AI, Data &amp; Program Delivery</text>
